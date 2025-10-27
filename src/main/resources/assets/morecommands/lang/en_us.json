@@ -1,0 +1,13 @@
+{
+  "itemGroup.morecommands": "Example Mod Tab",
+  "block.morecommands.example_block": "Example Block",
+  "item.morecommands.example_item": "Example Item",
+
+  "morecommands.configuration.title": "MoreCommands Configs",
+  "morecommands.configuration.section.morecommands.common.toml": "MoreCommands Configs",
+  "morecommands.configuration.section.morecommands.common.toml.title": "MoreCommands Configs",
+  "morecommands.configuration.items": "Item List",
+  "morecommands.configuration.logDirtBlock": "Log Dirt Block",
+  "morecommands.configuration.magicNumberIntroduction": "Magic Number Text",
+  "morecommands.configuration.magicNumber": "Magic Number"
+}
