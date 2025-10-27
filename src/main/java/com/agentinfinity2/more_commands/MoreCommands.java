@@ -1,5 +1,6 @@
 package com.agentinfinity2.more_commands;
 
+import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -71,5 +72,10 @@ public class MoreCommands {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 
+    }
+    @SubscribeEvent
+    public void onRegisterCommands(RegisterCommandsEvent event) {
+        // Call the register method in your new command class
+        BreedingCommand.register(event.getDispatcher());
     }
 }
