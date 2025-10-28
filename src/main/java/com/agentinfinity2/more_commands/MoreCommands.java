@@ -64,5 +64,6 @@ public class MoreCommands {
         BreedingCommand.register(event.getDispatcher());
         BrewingCommand.register(event.getDispatcher());
         LastDeathCommand.register(event.getDispatcher());
+        StopServerCommand.register(event.getDispatcher());
     }
 }
