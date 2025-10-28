@@ -63,5 +63,6 @@ public class MoreCommands {
         // Call the register method in your new command class
         BreedingCommand.register(event.getDispatcher());
         BrewingCommand.register(event.getDispatcher());
+        LastDeathCommand.register(event.getDispatcher());
     }
 }

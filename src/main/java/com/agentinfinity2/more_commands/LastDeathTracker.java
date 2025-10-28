@@ -3,8 +3,7 @@ package com.agentinfinity2.more_commands;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.Level;
-import net.neoforged.neoforge.event.entity.player.PlayerEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.minecraft.resources.ResourceKey;
@@ -13,8 +12,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-// We use the same EventBusSubscriber method we discussed for ModConfig
-@Mod.EventBusSubscriber(modid = "morecommands", bus = Mod.EventBusSubscriber.Bus.FORGE)
+// Use the project's EventBusSubscriber to auto-register static @SubscribeEvent handlers
+@EventBusSubscriber(modid = MoreCommands.MODID)
 public class LastDeathTracker {
 
     // Map to store the last death location for each player (UUID -> DeathLocation)

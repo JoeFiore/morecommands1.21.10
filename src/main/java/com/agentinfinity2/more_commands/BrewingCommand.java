@@ -169,6 +169,7 @@ public class BrewingCommand {
     }
     // --- 3. Execution Logic ---
     private static int handleCommand(CommandContext<CommandSourceStack> context) throws CommandSyntaxException {
+        // ...
         String potionName = StringArgumentType.getString(context, "potion").toLowerCase();
         CommandSourceStack source = context.getSource();
         MutableComponent message;
