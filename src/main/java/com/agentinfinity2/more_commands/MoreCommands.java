@@ -65,5 +65,8 @@ public class MoreCommands {
         BrewingCommand.register(event.getDispatcher());
         LastDeathCommand.register(event.getDispatcher());
         StopServerCommand.register(event.getDispatcher());
+    // Backup management commands
+    BackupListCommand.register(event.getDispatcher());
+    BackupDeleteCommand.register(event.getDispatcher());
     }
 }
